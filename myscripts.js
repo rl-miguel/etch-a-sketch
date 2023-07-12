@@ -1,38 +1,19 @@
 const body = document.querySelector('body');
-let divContainer = document.createElement('div');
-
-let div1= document.createElement('div');
-let div2= document.createElement('div');
-let div3= document.createElement('div');
-let div4= document.createElement('div');
-let div5= document.createElement('div');
-let div6= document.createElement('div');
-let div7= document.createElement('div');
-let div8= document.createElement('div');
-let div9= document.createElement('div');
-let div10= document.createElement('div');
-let div11= document.createElement('div');
-let div12= document.createElement('div');
-let div13= document.createElement('div');
-let div14= document.createElement('div');
-let div15= document.createElement('div');
-let div16= document.createElement('div');
-
+let divContainer= document.createElement('div');
+divContainer.className="divContainer"
 body.appendChild(divContainer);
-divContainer.className='divContainer';
-divContainer.appendChild(div1);
-divContainer.appendChild(div2);
-divContainer.appendChild(div3);
-divContainer.appendChild(div4);
-divContainer.appendChild(div5);
-divContainer.appendChild(div6);
-divContainer.appendChild(div7);
-divContainer.appendChild(div8);
-divContainer.appendChild(div9);
-divContainer.appendChild(div10);
-divContainer.appendChild(div11);
-divContainer.appendChild(div12);
-divContainer.appendChild(div13);
-divContainer.appendChild(div14);
-divContainer.appendChild(div15);
-divContainer.appendChild(div16);
+
+let div= document.createElement('div');
+
+
+
+function createDiv(){
+
+    for(i=0; i<17; i++){
+        div= document.createElement('div');
+        divContainer.appendChild(div);
+    }
+}
+
+
+createDiv()
