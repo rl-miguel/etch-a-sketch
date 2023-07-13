@@ -1,20 +1,25 @@
-const body = document.querySelector('body');
-let divContainer= document.createElement('div');
-divContainer.className="divContainer"
-body.appendChild(divContainer);
-
-let div= document.createElement('div');
+const body=document.querySelector('body');
+const divContainer=document.getElementById('divContainer');
 
 
-function createDiv(){
+function createGrid(){
+for(i=0;i<256;i++){
+let div = document.createElement('div');
+divContainer.appendChild(div);
+div.classList.add('etchGrid');
+div.addEventListener('mouseover', colorMyDiv);
 
-    for(i=0; i<256; i++){
-        div= document.createElement('div');
-        divContainer.appendChild(div);
-        div.className='etchGrid';
-        div.textContent='';
-    }
+function colorMyDiv(){
+    div.classList.add('gridMouseOver')
+}
+}};
+
+createGrid()
+
+function countDiv(){
+    let numberOfDivs = document.getElementsByClassName('etchGrid');
+    console.log(numberOfDivs);
 }
 
+countDiv()
 
-createDiv()

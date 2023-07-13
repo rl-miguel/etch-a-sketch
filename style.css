@@ -1,4 +1,4 @@
-.divContainer{
+#divContainer{
     display:flex;
     flex-wrap:wrap;
 }
@@ -7,7 +7,11 @@ div.etchGrid{
     width:5px;
     height:2px;
     border:3px black;
-    padding:40px;
+    padding:30px;
     border-style:solid;
  
+}
+
+div.gridMouseOver{
+    background-color:#DCAE96;
 }
