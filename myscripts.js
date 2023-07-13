@@ -6,12 +6,13 @@ body.appendChild(divContainer);
 let div= document.createElement('div');
 
 
-
 function createDiv(){
 
-    for(i=0; i<17; i++){
+    for(i=0; i<256; i++){
         div= document.createElement('div');
         divContainer.appendChild(div);
+        div.className='etchGrid';
+        div.textContent='';
     }
 }
 
