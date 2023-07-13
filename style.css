@@ -1,29 +1,55 @@
 body{
-    width:100vw;
+    width:95vw;
     height:100vh;
+    background-color:#6C737E;
 }
 
-#divContainer{
-    margin-left:600px;
+button{
+}
+
+.main-content{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.sidebar-content{
+    justify-content:center;
+    align-items:center;
+
+    width:300px;
+    padding:10px;
+    height:600px;
+    background-color: #576F72;
+    border-color:#7D9D9C;
+    border-style:solid;
     margin-top:100px;
+    display:flex;
+   
+}
+
+
+#divContainer{
+ 
+    margin-top:-170px;
     display:flex;
     flex-wrap:wrap;
     
     justify-content:center;
- 
     width:40vw;
+    height:40vh;
+    max-width:40vw;
+    max-height:40vh;
 }
 
 div.etchGrid{
     
     width:8px;
     height:2px;
-    border:3px black;
-    padding:15px;
+    border:2px #E4DCCF;
+    padding:16px;
     border-style:solid;
  
 }
 
-div.gridMouseOver{
-    background-color:#DCAE96;
-}
